@@ -21,7 +21,7 @@ function loginController($state, UserService) {
       // handle success
       .then(function () {
         console.log("Successful login...")
-        $state.go('profile')
+        $state.go('home')
         vm.disabled = false
         vm.loginForm = {}
       })

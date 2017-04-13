@@ -11,6 +11,42 @@ body
 	{
 		background-color: #0066cc;
 	}
+	#postTable  {
+  padding-top: 20px;
+    width: 100%;
+    height: 100%;
+		margin-left: 30px;
+}
+	#searchEngine  {
+  padding-top: 20px;
+    width: 70%;
+    height: 70%;
+		margin-left: 360px;
+		position: inline-table;
+}
+	#submit  {
+  padding-top: 20px;
+    width: 70%;
+    height: 70%;
+		margin-left: 80px;
+		margin-top: -30px;
+		display: inline-table
+}
+	#searchResult  {
+  padding-top: 20px;
+    width: 100%;
+    height: 100%;
+		margin-left: 120px;
+		margin-top: -70px;
+		display: inline-table
+}
+	#searchImage  {
+float: right;
+margin-right: 80px;
+margin-top: -120px;
+width: 400px;
+height: 300px;
+}
 	#title
 	{
 		font-size: 50px;
@@ -23,8 +59,11 @@ body
 		height: 70px;
 	}
 	#yelpsGeneratedPic2{
-		width: 60px;
-		height: 60px;
+		width: 400px;
+		height: 300px;
+	}
+	#twoButtons{
+		
 	}
 	#title2
 	{
