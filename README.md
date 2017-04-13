@@ -1,4 +1,4 @@
-# Random Restaurant
+# Random Restaurant (*beta)
 
 #### Intro
 
