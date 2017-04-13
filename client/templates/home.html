@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../js/css/style.css">
+  <script src="/js/app.js" charset="utf-8"></script>
+     <!-- <script src="bower_components/ngGeolocation.min.js"/> -->
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="header">.</div>
+  	<div id="title"> <span style="font-weight: 200;">Where to </span> <strong>EAT</strong> </div>
+  	<div id="suggestion"></div>
+
+<div class="row" ng-hide="info" >
+  <div class="col-xs-6">
+    <input type="text" class="form-control" ng-model='yelpCtrl.search.term' name="Cuisine" placeholder="Cuisine">
+    <input type="text" class="form-control" ng-model='yelpCtrl.search.zip' name="zipSearch" placeholder="Zip Code">
+    <div class="form-control">Open Now: <input type="checkbox" class="check-box" ng-model='yelpCtrl.search.open'name="openNow" value="true"></div>
+    <select name="price" class="form-control" ng-model='yelpCtrl.search.price'>
+      <option value="1,2,3,4">Select Price</option>
+      <option value="1">$</option>
+      <option value="2">$$</option>
+      <option value="3">$$$</option>
+      <option value="4">$$$$</option>
+    </select>
+    </div>
+    <div ng-click="info = !info">
+    <button ng-model="hello" ng-click='yelpCtrl.yelpSearch()'>Search!</button>
+    </div>
+</div>
+
+<div ng-hide="!info">
+  <div>Name: {{yelpCtrl.allRestaurants.name}}</div>
+  <div>Address: {{yelpCtrl.allRestaurants.location.display_address}}</div>
+  <div>Rating: {{yelpCtrl.allRestaurants.rating}}</div>
+  <div>Price: {{yelpCtrl.allRestaurants.price}}</div>
+  Img:<img id='yelpsGeneratedPic' src="{{yelpCtrl.allRestaurants.image_url}}">
+  <button ng-click='info = !info'>New search!</button>
+  <button ng-click='yelpCtrl.yelpFavorite()'>Favorite!</button>
+</div>
+
+ <div id="footer"> <em>Created by Doyle Ahn </em> </div>
+  </body>
+
+</html>

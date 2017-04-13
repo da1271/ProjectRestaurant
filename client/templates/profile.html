@@ -1,0 +1,26 @@
+<h1>User Profile Page</h1>
+<h2>Name: {{ currentUser.username }} </h2>
+<h3>ID: {{ currentUser._id }}</h3>
+
+<h3>Favorites:</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Open Now</th>
+      <th>Rating</th>
+      <th>Price Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="restaurant in currentUser.favorite" id='searchContainer'  style='cursor:pointer'>
+      <td>{{restaurant.name}}</td>
+      <td>{{restaurant.location.address1}},  {{restaurant.location.city}},
+        {{restaurant.location.state}} {{restaurant.location.zip_code}}
+      </td>
+      <td>{{!restaurant.is_closed}}</td>
+      <td>{{restaurant.rating}}</td>
+      <td>{{restaurant.price}}</td>
+    </tr>
