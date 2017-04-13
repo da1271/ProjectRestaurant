@@ -2,7 +2,7 @@
 
 #### Intro
 
-Have you ever dealt with not being able to choose which restaurant to eat at?? Well hooray! Random Restaurant will be an app designed to find you a random restaurant in an area you. Some stretches are being able to search based on a certain cuisine, number of reviews, or number of friends that checked into that location. 
+Have you ever dealt with not being able to choose which restaurant to eat at?? Well hooray! Random Restaurant will be an app designed to find you a random restaurant in an area around you. Some stretches are being able to search based on a certain cuisine, number of reviews, or number of friends that checked into that location. 
 
 #### Wireframes
 <img src="./assets/wire1.jpg" style="width: 150px;">
