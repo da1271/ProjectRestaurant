@@ -3,7 +3,7 @@ var passport  = require('passport'),
 
 var yelp      = new yelpApiV3({
   app_id      : process.env.YELP_ID,
-  app_secret  : process.env.YELP_SECRET,
+  app_secret  : process.env.YELP_SECRET
 });
 
 
