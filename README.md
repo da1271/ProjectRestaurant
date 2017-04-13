@@ -1,11 +1,8 @@
-# ProjectRestaurant
-https://findrandomrestaurant.herokuapp.com
-
 # Random Restaurant
 
 #### Intro
 
-Have you ever dealt with not being able to choose which restaurant to eat at?? Well hooray! Random Restaurant will be an app designed to find you a random 4 star restaurant in a set radius around you. Some stretches are being able to search based on a certain cuisine, number of reviews, or number of friends that checked into that location. 
+Have you ever dealt with not being able to choose which restaurant to eat at?? Well hooray! Random Restaurant will be an app designed to find you a random restaurant in an area you. Some stretches are being able to search based on a certain cuisine, number of reviews, or number of friends that checked into that location. 
 
 #### Wireframes
 <img src="./assets/wire1.jpg" style="width: 150px;">
@@ -14,6 +11,22 @@ Have you ever dealt with not being able to choose which restaurant to eat at?? W
 
 #### ERD
 <img src="./assets/erd.jpg" style="width: 150px;">
+
+#### Stretch Goals
+- Be able to search according to Cuisine, price, rating ✓
+- Allow users to make a favorites and only access favorites while logged in ✓
+- use Google Maps API and Geolocator to navigate lmao.. ✗
+ 
+#### Unsolved Problems
+- Design
+- Google Maps API
+
+#### Installation Instructions
+- Clone the repo
+- $ npm install
+- $ nodemon
+- Visit localhost:3000
+- Enjoy!
 
 #### Checkout my [Trello](https://trello.com/b/GPSYsDfl/project-restaurant)!
 #### Technologies used:
