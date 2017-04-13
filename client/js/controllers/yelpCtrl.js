@@ -28,7 +28,7 @@ $http.post('/users/addFavorite', vm.allRestaurants)
         zipSearch  = vm.search.zip
         rating     = vm.search.rating
         $http({
-                  url: 'http://localhost:3000/restaurants/search',
+                  url: '/restaurants/search',
                   method: "GET",
                   params: {term: searchTerm, zip: zipSearch, categories: 'restaurants', open_now: openNow, price: price, rating: rating}
                 })
