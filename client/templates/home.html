@@ -34,7 +34,7 @@
 
 <div id="searchResult" ng-hide="!info">
   <div><p class="searchFont">Name:   {{yelpCtrl.allRestaurants.name}}</p></div>
-  <div><p class="searchFont">Address:   <a ng-href="https://www.google.com/maps/place/{{yelpCtrl.allRestaurants.location.display_address}}" onclick="window.open(this.href)">{{yelpCtrl.allRestaurants.location.address1}}</a></p></div>
+  <div><p class="searchFont">Address:   <a ng-href="https://www.google.com/maps/place/{{yelpCtrl.allRestaurants.location.display_address}}" onclick="window.open(this.href)">{{yelpCtrl.allRestaurants.location.address1}},{{yelpCtrl.allRestaurants.location.city}},{{yelpCtrl.allRestaurants.location.state}}</a></p></div>
   <div><p class="searchFont">Rating:   {{yelpCtrl.allRestaurants.rating}}</p></div>
   <div><p class="searchFont">Price:   {{yelpCtrl.allRestaurants.price}}</p></div>
 </div>
