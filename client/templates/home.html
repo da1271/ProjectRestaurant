@@ -33,14 +33,14 @@
 </div>
 
 <div id="searchResult" ng-hide="!info">
-  <div>Name: {{yelpCtrl.allRestaurants.name}}</div>
-  <div>Address: <a ng-href="https://www.google.com/maps/place/{{yelpCtrl.allRestaurants.location.display_address}}" onclick="window.open(this.href)">{{yelpCtrl.allRestaurants.location.address1}}</a></div>
-  <div>Rating: {{yelpCtrl.allRestaurants.rating}}</div>
-  <div>Price: {{yelpCtrl.allRestaurants.price}}</div>
+  <div><p class="searchFont">Name:   {{yelpCtrl.allRestaurants.name}}</p></div>
+  <div><p class="searchFont">Address:   <a ng-href="https://www.google.com/maps/place/{{yelpCtrl.allRestaurants.location.display_address}}" onclick="window.open(this.href)">{{yelpCtrl.allRestaurants.location.address1}}</a></p></div>
+  <div><p class="searchFont">Rating:   {{yelpCtrl.allRestaurants.rating}}</p></div>
+  <div><p class="searchFont">Price:   {{yelpCtrl.allRestaurants.price}}</p></div>
 </div>
 
 <div ng-hide="!info" id="twoButtons">
-<button ng-click='info = !info'>New search!</button>
+<button ng-click='info = !info'>Back</button>
 <button ng-click='yelpCtrl.yelpFavorite()'>Favorite!</button>
 </div>
 
